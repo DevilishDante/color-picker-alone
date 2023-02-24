@@ -1,4 +1,4 @@
-# ![1676383092268](image/README/1676383092268.png) Color picker
+# ![1676383092268](image/README/1676383092268.png) Color picker (stand-alone version)
 
 It's standalone version of my color picker
 

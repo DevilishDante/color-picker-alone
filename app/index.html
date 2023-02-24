@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Color Picker</title>
+        <META NAME="Author" CONTENT="DevilishDante">
+        <META NAME="Description" CONTENT="Color Picker by DevilishDante">
+        <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+        <META NAME="Owns" CONTENT="DevilishDante">
+        <META NAME="Generator" CONTENT="Visual Studio Code">
+        <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="./assets/CSS/style.css" type="text/css">
+        <link rel="stylesheet" href="./assets/CSS/boutons.css" type="text/css">
+        <link rel="stylesheet" href="./assets/CSS/nav.css" type="text/css">
+        <link rel="stylesheet" href="./assets/CSS/tooltip.css" type="text/css">
+        <link rel="stylesheet" href="./assets/CSS/context.css" type="text/css">
+        <script type="module" src="./assets/js/core.js" defer></script>
+
+        <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons" as="style">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+        <nav class="navi">
+            <div class="nav-1">
+                <a href="#" class="navi-btn" id="close-btn">
+                    <span class="material-icons">close</span>
+                </a>
+                <a href="#" class="navi-btn" id="minimize-btn">
+                    <span class="material-icons">minimize</span>
+                </a>
+            </div>
+            <div class="nav-2" id="window_move">
+                <!-- <img src="./assets/icons/icon-48.png" class="logo" alt="logo"> -->
+                <p class="titre" id="title_name">Color Picker</p>
+            </div>
+            <div class="nav-3">
+                <tooltip style="float: right">
+                    <a target="_blank" href="https://github.com/DevilishDante"><span style="color: #d66853">v1.2 ❤</span></a>
+                    <content class="t-content t-left">Support me on Github 😇</content>
+                </tooltip>
+            </div>
+        </nav>
+        <div class="window">
+            <div id="no-add"></div>
+            <div class="flex-container">
+                <div class="flex-item center color-main">
+                    <tooltip>
+                        <input type="color" id="pick-color" value="#D66853">
+                        <div class="pick"><div id="pick-svg"></div></div>
+                        <content class="t-content t-right">Click &<br>Pick !</content>
+                    </tooltip>
+                    <input type="button" id="save-color" value="Save">
+                </div>
+                <div class="flex-item center color-pick">
+                    <div class="d-inline-flex p-2">
+                        <div id="result-rgb">No color selected,</div><br>
+                        <div id="result-hex">click color picker to start</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="window">
+            <div id="history"></div>
+        </div>
+    </body>
+    <script src="./assets/js/neutralino/neutralino.js"></script>
+    <script src="./assets/js/neutralino/main.js"></script>
+    <script src="./assets/js/core_boutons.js"></script>
+</html>

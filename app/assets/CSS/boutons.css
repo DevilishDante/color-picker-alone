@@ -1,0 +1,71 @@
+#close-btn{
+    color: #D1201E;
+    padding: 5px; 
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 15px;
+}
+#close-btn:hover{
+    background-color: #D1201E;
+    font-weight: bolder;
+    color:aliceblue;
+}
+#maximize-btn{
+    color: #ed9939;
+    padding: 5px; 
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 15px;
+}
+#maximize-btn:hover{
+    background-color: #ed9939;
+    font-weight: bolder;
+    color:aliceblue;
+}
+#minimize-btn{
+    color: #39ede7;
+    padding: 5px; 
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 15px;
+}
+#minimize-btn:hover{
+    background-color: #39ede7;
+    font-weight: bolder;
+    color:aliceblue;
+}
+#settings-btn{
+    color: #559c65;
+    padding: 5px; 
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 15px;
+    position: relative;
+    float: right;
+}
+#settings-btn:hover{
+    background-color: #559c65;
+    font-weight: bolder;
+    color:aliceblue;
+}
+#user-btn{
+    color: #b6611d;
+    padding: 5px; 
+    border-radius: 5px;
+    align-items: center;
+    padding-top: 10px;
+    position: fixed;
+    right: 5px;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+#user-btn:hover{
+    background-color: #b6611d;
+    font-weight: bolder;
+    color:aliceblue;
+}

@@ -17,4 +17,5 @@ With my color picker, you can :
 
 ## How to install
 
-1. Just click on "Color Picker" ! 😸
+1. Unzip in a folder
+2. Just click on "Color Picker" ! 😸

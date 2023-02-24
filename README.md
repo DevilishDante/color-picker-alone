@@ -13,12 +13,8 @@ With my color picker, you can :
 
 ## Preview
 
-![1676774236271](image/README/1676774236271.png)
+![1677236796115](image/README/1677236796115.png)
 
 ## How to install
 
-1) Open your extensions manager tab (`<browser>://extensions`)
-2) Enable "Developper Mode"
-3) Drag and drop the downloaded zip file into the tab
-4) Once uploaded and loaded, disable "Developper Mode"
-5) Have fun using "Color Picker" ! 😸
+1. Just click on "Color Picker" ! 😸

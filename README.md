@@ -1,5 +1,9 @@
 # ![1676383092268](image/README/1676383092268.png) Color picker
 
+It's standalone version of my color picker
+
+Find navigator version [here ](https://github.com/DevilishDante/color-picker)
+
 With my color picker, you can :
 
 * Copy/paste color picked in hex and rgb

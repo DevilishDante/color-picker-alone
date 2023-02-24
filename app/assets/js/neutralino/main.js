@@ -3,6 +3,9 @@
 // Feel free to use any frontend framework you like :)
 // See more details: https://neutralino.js.org/docs/how-to/use-a-frontend-library
 
+// const appdata = (process.env.APPDATA || (process.platform == 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME + "/.local/share")) + `\\${require(__dirname + '/package.json').name}\\`
+
+
 function setTray() {
     if(NL_MODE != "window") {
         console.log("INFO: Tray menu is only available in the window mode.");

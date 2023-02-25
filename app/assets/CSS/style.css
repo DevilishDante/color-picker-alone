@@ -1,3 +1,7 @@
+@import url(./addons/tooltip.css);
+@import url(./addons/context.css);
+@import url(./addons/boutons.css);
+@import url(./addons/nav.css);
 @font-face {
     font-family: "Sunny Spells";
     src: url(./../font/Sunny\ Spells.ttf);
@@ -27,14 +31,6 @@ body{background-color: var(--c-bg);border-radius: 5px;padding: 5px;max-width: 45
     pointer-events: none;
 }
 p{margin:0}h1{margin:5px}
-.titre{
-    color:whitesmoke;
-    width: 100%;text-align: center;
-    font-family: "Sunny Spells";
-    font-size: xx-large;
-    color: var(--c-color2);
-    text-shadow: 2px 2px 2px var(--c-color1);
-}
 .window{
     background-color: var(--c-main);
     border-radius: 5px;

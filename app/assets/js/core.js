@@ -1,7 +1,7 @@
 // printcolor
-import {printColor,svg} from './print-color.js'
+import {printColor,svg} from './actions/print-color.js'
 // history
-import {saveColor,history} from './history.js'
+import {saveColor,history} from './actions/history.js'
 // event
 history()
 svg('#00000');

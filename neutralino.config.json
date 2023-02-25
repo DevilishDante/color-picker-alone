@@ -31,7 +31,7 @@
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/app/assets/icons/icon-512.png",
-      "enableInspector": false,
+      "enableInspector": true,
       "borderless": true,
       "maximize": false,
       "hidden": false,

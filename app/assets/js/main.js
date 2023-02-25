@@ -1,10 +1,26 @@
-// This is just a sample app. You can structure your Neutralinojs app code as you wish.
-// This example app is written with vanilla JavaScript and HTML.
-// Feel free to use any frontend framework you like :)
-// See more details: https://neutralino.js.org/docs/how-to/use-a-frontend-library
+// Docs: https://neutralino.js.org/docs/how-to/use-a-frontend-library
 
 // const appdata = (process.env.APPDATA || (process.platform == 'darwin' ? process.env.HOME + '/Library/Preferences' : process.env.HOME + "/.local/share")) + `\\${require(__dirname + '/package.json').name}\\`
 
+// color-picker core
+import {printColor,svg} from './actions/print-color.js'
+import {saveColor,history} from './actions/history.js'
+// event
+history()
+svg('#00000')
+// chage la couleur au input donc au choix final, et au pendant le changement donc change
+document.getElementById('pick-color').addEventListener('input',e  => printColor(e.target.value))
+document.getElementById('pick-color').addEventListener('change',e  => printColor(e.target.value))
+// sauvegarde la couleur
+document.getElementById('save-color').addEventListener('click',() => saveColor(document.getElementById('pick-color').value))
+//Ferme l'application
+document.getElementById("close-btn").addEventListener("click",async (e) => {await Neutralino.app.exit()});
+// Reduit la fenetre
+document.getElementById("minimize-btn").addEventListener("click",async (e) => {await Neutralino.window.hide()});
+// Recup le nom du prog pour la fenêtre
+Window;addEventListener('load', async _ => {await Neutralino.window.setDraggableRegion('window_move')})
+
+// SystemTray icon
 
 function setTray() {
     if(NL_MODE != "window") {
@@ -50,14 +66,3 @@ Neutralino.events.on("windowClose", onWindowClose);
 if(NL_OS != "Darwin") { // TODO: Fix https://github.com/neutralinojs/neutralinojs/issues/615
     setTray();
 }
-
-//Ferme l'application
-document.getElementById("close-btn").addEventListener("click",async (e) => {
-    await Neutralino.app.exit()
-});
-// Reduit la fenetre
-document.getElementById("minimize-btn").addEventListener("click",async (e) => {
-    await Neutralino.window.hide()
-});
-// Recup le nom du prog pour la fenêtre
-Window;addEventListener('load', async _ => {await Neutralino.window.setDraggableRegion('window_move')})

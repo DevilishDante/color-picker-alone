@@ -32,7 +32,7 @@
 #minimize-btn:hover{
     background-color: #39ede7;
     font-weight: bolder;
-    color:aliceblue;
+    color:var(--c-bg);
 }
 #settings-btn{
     color: #559c65;
@@ -72,7 +72,7 @@
 .titre{
     width: 100%;text-align: center;
     font-family: "Sunny Spells";
-    font-size: xx-large;
+    font-size: x-large;
     color: var(--c-color2);
     text-shadow: 2px 2px 2px var(--c-color1);
     -moz-user-select: none; /* Firefox */

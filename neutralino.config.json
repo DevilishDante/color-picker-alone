@@ -31,7 +31,7 @@
       "fullScreen": false,
       "alwaysOnTop": false,
       "icon": "/app/assets/icons/icon-512.png",
-      "enableInspector": true,
+      "enableInspector": false,
       "borderless": true,
       "maximize": false,
       "hidden": false,
@@ -66,7 +66,7 @@
     "binaryName": "color-picker-alone",
     "resourcesPath": "/app/",
     "extensionsPath": "/extensions/",
-    "clientLibrary": "/app/assets/js/neutralino/neutralino.js",
+    "clientLibrary": "/app/assets/js/libs/neutralino.js",
     "binaryVersion": "4.9.0",
     "clientVersion": "3.8.0"
   }
